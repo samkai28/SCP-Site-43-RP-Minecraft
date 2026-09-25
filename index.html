@@ -2,120 +2,100 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SCP Site-43 RP Minecraft</title>
-<meta name="description" content="SCP Site-43 RP Minecraft — serveur Minecraft Roleplay inspiré de l'univers SCP.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SCP SITE-43 // ROLEPLAY</title>
+<meta name="description" content="SCP Site-43 RP Minecraft — accès au serveur, règles, grades et installation des mods.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="noise"></div>
 <div class="scanlines"></div>
 
-<nav>
-  <a href="#accueil" class="brand">
-    <span class="scp-logo">SCP</span>
-    <span>SITE-43 <small>ROLEPLAY</small></span>
-  </a>
-  <div class="navlinks">
-    <a href="#serveur">Serveur</a>
-    <a href="#grades">Grades</a>
-    <a href="#regles">Règles</a>
-    <a href="#launcher">Launcher</a>
-    <a href="#discord">Discord</a>
-  </div>
-</nav>
-
-<header id="accueil" class="hero">
-  <div class="status"><span></span> SYSTÈME OPÉRATIONNEL</div>
-  <p class="classified">FONDATION SCP • ACCÈS NIVEAU 3+</p>
-  <h1>SCP <strong>SITE-43</strong><br><em>ROLEPLAY</em></h1>
-  <p class="hero-text">Entrez dans un complexe sécurisé où scientifiques, forces de sécurité, membres du personnel et anomalies se confrontent dans un univers Minecraft RP immersif.</p>
-  <div class="buttons">
-    <a class="btn primary" href="launcher/SCP-Site-43-Launcher.exe" download>⬇ Télécharger le Launcher</a>
-    <a class="btn secondary" href="#serveur">Découvrir le Site-43</a>
-  </div>
-  <div class="terminal">[SYSTEM] Connexion au réseau de la Fondation... <span>OK</span></div>
+<header class="topbar">
+  <div class="brand"><span class="scp">SCP</span><span>SITE-43 <small>ROLEPLAY</small></span></div>
+  <nav>
+    <a href="#serveur">SERVEUR</a>
+    <a href="#grades">GRADES</a>
+    <a href="#regles">RÈGLES</a>
+    <a href="#installation">INSTALLATION</a>
+    <a href="#discord">DISCORD</a>
+  </nav>
+  <div class="level">NIVEAU 3</div>
 </header>
 
 <main>
+<section class="hero">
+  <div class="eyebrow"><span class="dot"></span> SYSTÈME OPÉRATIONNEL <span class="line"></span> SITE-43</div>
+  <div class="stamp">DOCUMENT CLASSIFIÉ<br><b>ACCÈS AUTORISÉ</b></div>
+  <p class="kicker">FONDATION SCP // MINECRAFT ROLEPLAY</p>
+  <h1>SCP <span>SITE-43</span></h1>
+  <p class="subtitle">Un complexe sécurisé. Des équipes spécialisées. Un univers RP à découvrir sur Minecraft.</p>
+  <div class="hero-actions">
+    <a class="btn danger" href="https://savedly.net/f/2j5vumhm" target="_blank" rel="noopener">⬇ INSTALLER LES MODS</a>
+    <a class="btn ghost" href="#serveur">ACCÉDER AU DOSSIER</a>
+  </div>
+  <div class="terminal"><span>[SYSTEM]</span> Vérification du réseau... <b>OK</b> &nbsp; // &nbsp; Minecraft 1.20.1 &nbsp; // &nbsp; Forge 47.4.10</div>
+</section>
+
 <section id="serveur" class="section">
-  <div class="section-title"><span>01</span><h2>Informations du serveur</h2></div>
-  <div class="info-grid">
-    <article class="panel">
-      <div class="icon">◉</div><h3>Adresse Minecraft</h3>
-      <code>site-43.aternos.me</code>
-      <button class="copy" onclick="copyText('site-43.aternos.me', this)">Copier l'adresse</button>
-      <p>Adresse d'exemple à remplacer par l'adresse réelle de ton serveur.</p>
-    </article>
-    <article class="panel">
-  <div class="icon">◆</div><h3>Version</h3>
-  <strong> Minecraft 1.20.1 </strong>
-  <p>Version recommandée : Minecraft Java 1.20.1 avec Forge.</p>
-</article>
-    <article class="panel">
-      <div class="icon">●</div><h3>État du Site</h3>
-      <strong class="online">● EN LIGNE</strong>
-      <p>Statut visuel du serveur. Peut être relié plus tard à une API.</p>
-    </article>
+  <div class="heading"><span>01</span><div><small>DOSSIER TECHNIQUE</small><h2>INFORMATIONS DU SERVEUR</h2></div></div>
+  <div class="cards">
+    <article class="card"><div class="tag">SERVER ADDRESS</div><h3>site-43.aternos.me</h3><button onclick="copyAddress(this)">COPIER L'ADRESSE</button></article>
+    <article class="card"><div class="tag">VERSION</div><h3>1.20.1</h3><p>Java Edition avec Forge 47.4.10.</p></article>
+    <article class="card"><div class="tag">ÉTAT DU SITE</div><h3 class="online">● OPÉRATIONNEL</h3><p>Consulte Discord pour les annonces et ouvertures.</p></article>
   </div>
 </section>
 
-<section id="grades" class="section">
-  <div class="section-title"><span>02</span><h2>Grades & départements</h2></div>
+<section id="grades" class="section dark">
+  <div class="heading"><span>02</span><div><small>ORGANIGRAMME</small><h2>GRADES & DÉPARTEMENTS</h2></div></div>
   <div class="roles">
-    <article><b>⌬</b><h3>Direction</h3><p>Supervision générale du Site-43 et décisions stratégiques.</p></article>
-    <article><b>▣</b><h3>Sécurité</h3><p>Protection du personnel, des installations et des zones sensibles.</p></article>
-    <article><b>⚗</b><h3>Scientifique</h3><p>Étude, documentation et expérimentation sur les anomalies.</p></article>
-    <article><b>✚</b><h3>Médical</h3><p>Prise en charge des blessés et gestion des urgences médicales.</p></article>
-    <article><b>☣</b><h3>Classe-D</h3><p>Personnel de test affecté aux expérimentations de la Fondation.</p></article>
-    <article><b>⬟</b><h3>Unités spéciales</h3><p>Intervention lors des incidents et opérations à haut risque.</p></article>
+    <article><b>01</b><h3>DIRECTION</h3><p>Supervision générale du Site-43 et coordination des départements.</p></article>
+    <article><b>02</b><h3>SÉCURITÉ</h3><p>Protection du personnel et contrôle des accès aux zones sensibles.</p></article>
+    <article><b>03</b><h3>SCIENTIFIQUE</h3><p>Recherche, documentation et gestion des activités scientifiques.</p></article>
+    <article><b>04</b><h3>MÉDICAL</h3><p>Gestion des soins et des situations médicales du site.</p></article>
+    <article><b>05</b><h3>PERSONNEL</h3><p>Différents rôles RP permettant de participer à la vie du complexe.</p></article>
+    <article><b>06</b><h3>UNITÉS SPÉCIALES</h3><p>Équipes mobilisées pour les situations exceptionnelles.</p></article>
   </div>
 </section>
 
-<section id="regles" class="section rules">
-  <div class="section-title"><span>03</span><h2>Règlement du serveur</h2></div>
-  <div class="rules-grid">
-    <div><strong>01</strong><h3>Respect</h3><p>Respect obligatoire des joueurs et du staff. Aucun harcèlement.</p></div>
-    <div><strong>02</strong><h3>Roleplay</h3><p>Reste dans ton personnage et respecte le contexte des scènes RP.</p></div>
-    <div><strong>03</strong><h3>Triche</h3><p>Cheats, logiciels de triche et exploitation volontaire de bugs interdits.</p></div>
-    <div><strong>04</strong><h3>Fair-play</h3><p>Pas de grief abusif, de troll volontaire ou de comportement nuisible.</p></div>
-    <div><strong>05</strong><h3>Staff</h3><p>Les décisions du staff doivent être respectées. Les réclamations se font calmement.</p></div>
-    <div><strong>06</strong><h3>Immersion</h3><p>Évite le HRP inutile et privilégie les interactions cohérentes.</p></div>
+<section id="regles" class="section">
+  <div class="heading"><span>03</span><div><small>PROTOCOLE</small><h2>RÈGLEMENT DU SERVEUR</h2></div></div>
+  <div class="rules">
+    <div><span>01</span><div><h3>RESPECT</h3><p>Respect obligatoire des joueurs et du staff.</p></div></div>
+    <div><span>02</span><div><h3>ROLEPLAY</h3><p>Respecte le contexte et les scènes RP.</p></div></div>
+    <div><span>03</span><div><h3>FAIR-PLAY</h3><p>Pas de comportement volontairement nuisible à l'expérience des autres.</p></div></div>
+    <div><span>04</span><div><h3>STAFF</h3><p>Les demandes et réclamations passent par les canaux prévus.</p></div></div>
   </div>
 </section>
 
-<section id="launcher" class="section launcher-section">
-  <div class="download-box">
-    <div class="download-icon">↓</div>
-    <p class="classified">CLIENT OFFICIEL</p>
-    <h2>Launcher SCP Site-43</h2>
-    <p>Le launcher permet d'installer et de rejoindre facilement le serveur avec la configuration recommandée.</p>
-    <a class="btn primary big" href="launcher/SCP-Site-43-Launcher.exe" download>⬇ Télécharger pour Windows</a>
-    <div class="file-info">SCP-Site-43-Launcher.exe • Windows • Version 1.0</div>
-    <div class="notice">⚠ Place ton véritable fichier .exe dans le dossier <b>launcher/</b> pour activer le téléchargement.</div>
+<section id="installation" class="section install">
+  <div class="heading"><span>04</span><div><small>ACCÈS LOGICIEL</small><h2>INSTALLATION</h2></div></div>
+  <div class="install-box">
+    <div>
+      <div class="warning">⚠ ACCÈS REQUIS</div>
+      <h3>PACK DE MODS SITE-43</h3>
+      <p>Télécharge le pack officiel puis installe les mods nécessaires avant de rejoindre le serveur.</p>
+      <p class="muted">Minecraft 1.20.1 • Forge 47.4.10</p>
+    </div>
+    <a class="btn danger big" href="https://savedly.net/f/2j5vumhm" target="_blank" rel="noopener">🛠 INSTALLER LES MODS</a>
   </div>
 </section>
 
 <section id="discord" class="section discord">
-  <div>
-    <div class="section-title"><span>04</span><h2>Rejoins la communauté</h2></div>
-    <p>Retrouve les annonces, recrutements, événements RP et le support sur Discord.</p>
+  <div class="discord-box">
+    <div><small>COMMUNICATION // SITE-43</small><h2>REJOINS LE DISCORD</h2><p>Actualités, support, annonces et organisation du serveur.</p></div>
+    <a class="btn ghost" href="https://discord.gg/AFfPYZg9n" target="_blank" rel="noopener">OUVRIR DISCORD →</a>
   </div>
-  <a class="btn discord-btn" href="https://discord.gg/AFfPYZg9n" target="_blank">Rejoindre le Discord →</a>
 </section>
 </main>
 
-<footer>
-  <div class="scp-logo small-logo">SCP</div>
-  <p>SCP Site-43 RP Minecraft</p>
-  <small>Projet communautaire non officiel. Remplace les informations d'exemple avant publication.</small>
-</footer>
+<footer><span>SCP SITE-43 RP</span><span>DOCUMENT // CLASSIFIÉ</span><span>© SITE-43</span></footer>
 
 <script>
-function copyText(text, button) {
-  navigator.clipboard.writeText(text);
-  const old = button.textContent;
-  button.textContent = "✓ Copié !";
-  setTimeout(() => button.textContent = old, 1600);
+function copyAddress(btn){
+ navigator.clipboard.writeText('site-43.aternos.me');
+ const old=btn.textContent; btn.textContent='COPIÉ ✓';
+ setTimeout(()=>btn.textContent=old,1500);
 }
 </script>
 </body>
